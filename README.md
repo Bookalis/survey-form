@@ -1,0 +1,2 @@
+# survey-form
+The survey form is themed on the anime. It is entirely made from HTML and CSS. I also added the gradient effect. I also used the @media that provides: The @media rule is used in media queries to apply different styles for different media types/devices. Media queries can be used to check many things, such as: width and height of the viewport. width and height of the device. orientation (is the tablet/phone in landscape or portrait mode?)
