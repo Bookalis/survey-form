@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/15c9b6d7d8.js" crossorigin="anonymous"></script>> 
+        <link rel="stylesheet" href="main1.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+        <title>welcome to the survey</title>
+    </head>
+    <body>
+        <h1>welcome to the <i>Anime</i> survey form</h1>
+        <div class="anime">
+            <p id="a1">Tell us something about your anime experience.</p>
+            <form id="survey-form" action="/do-something">
+                <div class="f_rows">
+                    <div class="label">
+                        <label for="first_name" id="fname">  NAME   [you can put your nickname also ;-) ]</label>
+                    </div>
+                    <div class="fields">
+                        <input type="text" id="name" class="input-fields" placeholder="enter your name...." required>
+                    </div>
+                </div>
+                <div class="f_rows">
+                    <div class="label">
+                       <label for="email" id="email-label"> E-mail</label>                   
+                    </div>
+                    <div class="fields">
+                        <input type="email" id="email" class="input-fields" placeholder="enter your Email...." required>
+                    </div>
+                </div>
+                <div class="f_rows">
+                    <div class="label">
+                        <label for="number" class="number-label"> on a scale of 1- 10, how good was the anime you watched today/last night??</label>
+                    </div>
+                    <div class="fields">
+                        <input type="number" class="input-fields" id="number" placeholder="enter a no. b/w 1 -- 10" min="1" max="100">
+                    </div>
+                </div>
+                <div class="f_rows">
+                    <div class="label">
+                        <label for="dropdown" class="dropdown-label"> where did you watched it?</label>
+                    </div>
+                    <div class="fields">
+                        <select name="which site did you watched the anime from" id="dropdown" class="dropdown">
+                            <option value="gogoanime.xyz">GOGOANIME</option>
+                            <option value="animeflix.com">ANIMEFLIX</option>
+                            <option value="animepahe.org">ANIMEpahe</option>
+                            <option value="animesoul.io">ANIMESOUL</option>
+                            <option value="animefrenzy.com" >ANIMEFRENZY</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="f_rows">
+                    <div class="label">
+                        <label for="how_many_hours"> In a day how many hours did you watch anime?  { "-<"}</label>
+                    </div>
+                    <div class="fields">
+                        <ul id="w_time" style="list-style: none;">
+                        <li class="radio">
+                            <label>
+                                <input name="time" type="radio" value="1" class="user-selection">
+                                ~1 and 1/2 hours
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input type="radio" name="time" value="2" class="user-selection">
+                                ~2 hours
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input name="time" type="radio" value="3" class="user-selection">
+                                ~3 hours
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input name="time" type="radio" value="4" class="user-selection">
+                                ~more than 3 hours
+                            </label>
+                        </li>
+                     </ul>
+                    </div>
+                </div>
+                <div class="f_rows">
+                    <div class="label">
+                        <label for="feelings">
+                            what emotions did you feel during the anime?
+                            <br>
+                            (select all that apply-^-)
+                        </label>
+                    </div>
+                    <div class="fields">
+                        <ul id="feelings" style="list-style: none;">
+                        <li class="checkbox">
+                            <label>
+                                <input name="feeling-check" value="1" type="checkbox" class="user-selection">
+                                super exited!!!!!!!!
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                               <input name="feeling-check" value="2" type="checkbox" class="user-selection">
+                               happy!!
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input name="feeling-check" value="3" type="checkbox" class="user-selection">
+                                confused-> ???
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input name="feeling-check" value="4" type="checkbox" class="user-selection">
+                                angry ??!!??!!??
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input name="feeling-check" value="5" type="checkbox" class="user-selection">
+                                sad ||||
+                            </label>
+                        </li>
+                     </ul>
+                    </div>
+                </div>
+                <div class="f_rows">
+                    <div class="label">
+                        <label for="event-detail">
+                            please describe your experience watching the anime.
+                        </label>
+                    </div>
+                    <div class="fields">
+                        <textarea id="event-detail" class="input-field" style="height: 50px;resize: both;font-family: 'Courier New';" name="event-detail" cols="10" rows="10" placeholder="enter your experience watching the anime.....">
+                         </textarea>
+                    </div>
+                </div>
+                <button class="button" id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
